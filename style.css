@@ -1,0 +1,182 @@
+*{
+  padding: 0;
+  margin: 0;
+ /* box-sizing: border-box;*/
+  border: red 0px solid;
+  font-family: fon
+}
+@font-face {
+  font-family: cur;
+  src: url(SaladChilli.otf);
+}
+@font-face {
+  font-family: fon;
+  src: url(CodecPro-Regular.ttf);
+}
+body{
+  background-image: linear-gradient(to right ,#400101, #400101);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.page{
+  display: flex;
+  width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-direction: column;
+}
+.body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.body h1{
+  font-size: 25px;
+  font-family: cur;
+  color: #fff;
+  text-transform: capitalize;
+}
+.body button{
+  border-radius: 2px;
+  padding: 10px 20px;
+  border: none;
+  margin: 10px;
+  background: #035969;
+  background: #E5E8FF;
+  
+  
+}
+.yesbn{
+  
+}
+.buttons{
+  
+}
+.body p{
+  color: #BFBFBF;
+  text-transform: capitalize;
+  padding: 10px;
+  font-family: fon
+}
+.cardbg{
+  display: flex;
+  position: absolute;
+  color: #fff;
+  
+}
+.card{
+  background: #95044BA6;
+  background: #228B22;
+
+  background-color: #D2A904;
+  backdrop-filter: blur(100px);
+  padding: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  font-family: fon;
+  /*box-shadow: -2px -2px 5px #FFFDFDC4,5px 5px 5px #000000C4;*/
+  border: 0.7px solid #E8E8E8;
+}
+.card h2{
+  font-size: 25px;
+  padding: 10px;
+  color: #E9E9E9;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid #04034C;
+}
+.card p{
+  font-size: 15px;
+  padding: 2px;
+}
+.card .done{
+  padding: 10px 10px;
+  margin: auto;
+  border-radius: 2px;
+  border: 1px solid #333;
+  font-size: 15px;
+  width: 100%;
+  background: #E1E1E1;
+}
+.card span{
+  font-size: 18px;
+  color: blue;
+}
+.card #no{
+  display: flex;
+  align-items: center;
+  background: #FFFFFF75;
+  background-break: bounding-box;
+  justify-content: center;
+  padding-left: 5px;
+  border-radius: 2px;
+}
+.card .copied{
+  display: none;
+}
+.card strong{
+  color: #000;
+}
+
+
+
+
+.toast-hidden {
+opacity: 0;
+transition: opacity 1s;
+background-color: rgba(40, 40, 40, 0.88);
+color: #D4D4D4;
+padding: 10px;
+border-radius: 100px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1000;
+transition: 0.5s;
+font-size: 15px;
+display: flex;
+width: fit-content;
+}
+
+.toast-visible {
+opacity: 1;
+background-color: rgba(40, 40, 40, 0.88);
+color: #D4D4D4;
+padding: 10px;
+border-radius: 100px;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1000;
+transition: 0.5s;
+font-size: 15px;
+display: flex;
+width: fit-content;
+}
+#toast-message{
+  width: 100%;
+  padding: 5px;
+}
+#copybn{
+  padding: 5px;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  width: fit-content;
+}
+#copybn svg{
+  color: #fff;
+}
